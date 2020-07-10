@@ -36,4 +36,10 @@ export class PostsService {
         })
       );
   }
+
+  deletePosts() {
+    return this.http.delete(
+      "https://firstproject-fe71a.firebaseio.com/posts.json"
+    );
+  }
 }
